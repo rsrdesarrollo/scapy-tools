@@ -103,7 +103,7 @@ def main():
     parser.add_argument('--dtimer', default=1, type=int,
                        help='discovery run interval in seconds (default:1)')
     parser.add_argument('--dparal', default=1, type=int,
-                       help='discovery parallelize (default:1)')
+                       help='discovery parallelism (default:1)')
     parser.add_argument('--hostname', default='android-',
                        help='fake client hostname (default:android-)')
 
