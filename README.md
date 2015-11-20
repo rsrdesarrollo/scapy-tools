@@ -24,3 +24,7 @@ The script is really simple, and it allows you to set some special characteristi
 * **dtimer:** discovery run interval time in seconds
 * **dparal:** the amount of discovery packages to send in each interval.
 * **hostname:** all fake client hostnames on requests will be composed by this name followed by 16 random HEX chars
+
+## arp_host_ids
+
+Try to detect ARP spoofing attacks in a smart way. WIP
