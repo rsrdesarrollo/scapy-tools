@@ -91,7 +91,8 @@ def run():
     discovery_thread.daemon = True
     discovery_thread.start()
 
-    sniff(prn=_package_callback, filter="udp and port 68", lfilter=lambda (p): p.haslayer(DHCP), store=0)
+    filter = "udp and port 68"
+    sniff(iface=conf.iface,prn=_package_callback, filter=filter, lfilter=lambda (p): p.haslayer(DHCP), store=0)
 
 
 def main():
